@@ -1,26 +1,26 @@
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 
-import { themes as prismThemes } from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kmesh',
-  favicon: 'img/favicon.ico',
+  title: "Kmesh",
+  favicon: "img/favicons/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://kmesh.net',
+  url: "https://kmesh.net",
 
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'zh'],
+    defaultLocale: "en",
+    locales: ["en", "zh"],
     localeConfigs: {
       en: {
         htmlLang: "en-GB",
@@ -28,39 +28,42 @@ const config = {
       },
       zh: {
         label: "简体中文",
+        htmlLang: "zn",
       },
     },
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          sidebarPath: "./sidebars.js",
+          editUrl: "https://github.com/kmesh-net/website/blob/theme-change",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+        },
+        gtag: {
+          trackingID: "G-Y89FH1JDLV",
+          anonymizeIP: true,
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/kmesh-net/website/blob/theme-change",
           // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -70,36 +73,45 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
+      },
       navbar: {
-        title: 'Kmesh',
+        title: "Kmesh",
         logo: {
-          alt: 'Kmesh',
-          src: 'img/favicons/favicon.ico',
+          alt: "Kmesh",
+          src: "img/favicons/favicon.ico",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
+            type: "docSidebar",
+            sidebarId: "tutorialSidebar",
+            position: "left",
+            label: "Documentation",
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { href: 'https://github.com/kmesh-net/kmesh/releases', label: 'Downloads', position: 'left' },
+          { to: "/blog", label: "Blog", position: "left" },
+          {
+            href: "https://github.com/kmesh-net/kmesh/releases",
+            label: "Downloads",
+            position: "left",
+          },
           {
             href: "https://github.com/kmesh-net/kmesh",
             position: "right",
-            className: "header-github-link heade-icon",
+            className: "header-github-link header-icon",
           },
           {
             href: "https://x.com/Kmesh_net",
             position: "right",
-            className: "header-x-link heade-icon",
+            className: "header-x-link header-icon",
           },
           {
             to: "https://app.slack.com/client/T08PSQ7BQ/C06BU2GB8NL",
             position: "right",
-            className: "header-slack-link heade-icon",
+            className: "header-slack-link header-icon",
           },
           {
             type: "localeDropdown",
@@ -108,55 +120,19 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        style: "dark",
+        copyright: `Copyright © ${new Date().getFullYear()} Kmesh Project Authors. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
+
+  plugins: [
+    [require.resolve("./src/plugins/blogGlobalData/index.js"), {}],
+    "docusaurus-plugin-sass",
+  ],
 };
 
 export default config;

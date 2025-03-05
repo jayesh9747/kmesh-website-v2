@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Setup": {
+    "message": "Setup",
+    "description": "The label for category Setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Architecture": {
+    "message": "Architecture",
+    "description": "The label for category Architecture in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Core Concept": {
+    "message": "Core Concept",
+    "description": "The label for category Core Concept in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Performance": {
+    "message": "Performance",
+    "description": "The label for category Performance in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Developer Guide": {
+    "message": "Developer Guide",
+    "description": "The label for category Developer Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tests": {
+    "message": "Tests",
+    "description": "The label for category Tests in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Community": {
+    "message": "Community",
+    "description": "The label for category Community in sidebar tutorialSidebar"
+  }
+}
