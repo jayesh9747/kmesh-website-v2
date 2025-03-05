@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Welcome
 last_update:
-    date: "2025-02-22"
+  date: "2025-02-22"
 ---
 
 # Welcome to Kmesh: High-Performance and Low Overhead Service Mesh Data Plane
@@ -26,7 +26,7 @@ Kmesh leverages eBPF and programmable kernels to offload traffic management to t
 
 In the following docs, we will explain:
 
-- The [architecture](architecture/architecture) and highlights advantages of Kmesh.
-- The [quick start](setup/quickstart) of Kmesh.
-- The [performance](performance/performance) of Kmesh.
+- The [architecture](architecture) and highlights advantages of Kmesh.
+- The [quick start](setup/quick-start) of Kmesh.
+- The [performance](performance) of Kmesh.
 - The [community](community/contribute) of Kmesh.
