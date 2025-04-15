@@ -17,7 +17,7 @@ command = "yarn build"
 
 # Deploy Preview (Creates preview links for PRs)
 [context.deploy-preview]
-command = "yarn build && yarn start"
+command = "yarn build"
 
 [context.deploy-preview.environment]
   NODE_VERSION = "20.14.0"
